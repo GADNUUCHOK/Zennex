@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Zennex</string>
+    <string name="google_maps_API">AIzaSyDuJ9gVjzKPG7ZaiOJnIciOG12DxqZy17Q</string>
+    <string name="done">DONE</string>
+    <string name="revert">REVERT</string>
+    <string name="add">ADD</string>
+</resources>

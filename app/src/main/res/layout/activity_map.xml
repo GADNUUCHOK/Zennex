@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/dl_main_navigation_menu_popup"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:openDrawer="end">
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <fragment
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/map_fragment"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            tools:context=".MapActivity"/>
+    </RelativeLayout>
+
+    <fragment
+        android:id="@+id/fragment_drawer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:name="com.example.zennex.ui.viewComponent.NavigationDrawerComponent"
+        android:layout_gravity="end"
+        tools:layout="@layout/navigation_fragment" />
+</androidx.drawerlayout.widget.DrawerLayout>
